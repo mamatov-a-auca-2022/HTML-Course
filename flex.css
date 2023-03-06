@@ -12,9 +12,10 @@
    flex-grow: 1;
    flex-wrap: wrap;
    display: flex;
-   flex-shrink: 0;
+   flex-shrink: 1;
+   justify-content: flex-start;
+   gap: 15.6px;
    }
-
 
    .container > * {
    background-color: lightblue;
@@ -22,3 +23,28 @@
     color: blue;
     border: 2px dashed blue;
    }
+
+   .box1 {
+    flex-basis: 1400px;
+    height: 196px;
+}
+.box2{
+    flex-basis: 292.5px;
+    height: 196px;
+}
+.box3{
+    flex-basis: 1090px;
+    height: 196px;
+}
+.box4{
+    flex-basis: 1057px;
+    height: 196px;
+}
+.box5{
+    flex-basis: 155px;
+    height: 196px;
+}
+.box6{
+    flex-basis: 156.5px;
+    height: 196px;
+}
