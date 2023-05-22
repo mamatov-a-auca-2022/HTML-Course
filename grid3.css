@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+img:nth-of-type(1) {
+    display: none;
+}
+body {
+    background-image: url(https://cdn.imgchest.com/files/6yxkcg9ek7w.png);
+    background-repeat: no-repeat;
+    max-width: 1284px;
+    min-height: 1211px;
+    font-size: 2rem;
+    opacity: .5;
+    color: blue;
+    background-image: none;
+    opacity: 1;
+}
+.container > * {
+    border: 2px dashed blue;
+}
+.container{
+    display: grid;
+    grid-template-rows: minmax(20px,44px) minmax(20px,125px) minmax(20px,123px) minmax(20px,448px) minmax(20px,468px);
+    grid-template-areas:
+        "logo logo logo"
+        "menu six seven"
+        "menu three three"
+        "menu four four"
+        "five five five";
+    grid-template-columns: minmax(20px,435px) minmax(20px,497px) minmax(20px,351px) ;
+}
+.box1 {
+    grid-area: logo;
+}
+
+.box2 {
+    grid-area: menu;
+}
+
+.box3 {
+    grid-area: three;
+}
+
+.box2 > ul{
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    flex-direction: column;
+    text-transform: uppercase;
+
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+
+    color: #ffffff;
+    background-color:#2199c6;
+
+    max-width: 1140px;
+    max-height: 100%;
+    align-items: center;
+}
+
+li {
+    padding: 13.2px;
+    border-bottom: 1px solid #2199c6;
+}
+
+.box4 {
+    grid-area: four;
+}
+
+.box5 {
+    grid-area: five;
+}
+
+.box6 {
+    grid-area: six;
+}
+
+.box7 {
+    grid-area: seven;
+}
+
+.allforkids{
+    
+}
+.appleproducts{
+
+}
+.smartphones{
+
+}
+.useful{
+
+}
+.ipads{
+
+}
+.accessories{
+
+}
+.xiaomi{
+
+}
+.smartwatch{
+
+}
+.audio{
+
+}
+.networkhardware{
+
+}
+.tvs{
+
+}
+.sellinghardware{
+
+}
+.computersandaccessories{
+
+}
+.microclimat{
+
+}
+.serverhardware{
+
+}
+.vehicles{
+
+}
+.healthproducts{
+
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        grid-template-columns: minmax(20px, 100%);
+        grid-template-areas:
+            "one"
+            "two"
+            "three"
+            "four"
+            "five"
+            "six"
+            "seven";
+    }
+}
