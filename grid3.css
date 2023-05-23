@@ -23,26 +23,27 @@ body {
     display: grid;
     grid-template-rows: minmax(20px,44px) minmax(20px,125px) minmax(20px,123px) minmax(20px,448px) minmax(20px,468px);
     grid-template-areas:
-        "logo logo logo"
-        "menu six seven"
-        "menu three three"
-        "menu four four"
+        "one one one"
+        "three six seven"
+        "three two two"
+        "three four four"
         "five five five";
+
     grid-template-columns: minmax(20px,435px) minmax(20px,497px) minmax(20px,351px) ;
 }
 .box1 {
-    grid-area: logo;
+    grid-area: one;
 }
 
 .box2 {
-    grid-area: menu;
+    grid-area: two;
 }
 
 .box3 {
     grid-area: three;
 }
 
-.box2 > ul{
+.box3 > ul{
     font-family: sans-serif;
     font-size: 12px;
     font-weight: 700;
@@ -149,3 +150,4 @@ li {
             "seven";
     }
 }
+
