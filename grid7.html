@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Project</title>
-    <link rel="stylesheet" href="grid.css" class="style">   
+    <link rel="stylesheet" href="grid2c.css" class="style">   
 </head>
 <body>
+    <button class="buttonMenu">
+        <img src="https://cdn4.iconfinder.com/data/icons/essentials-73/24/047_-_Menu-256.png" alt="burgermenu" class="mobileMenu">
+    </button>
     <button onclick='switchStyle()' style='position: absolute; top:0; right:0;'>Style</button>
     <img src='https://cdn.imgchest.com/files/k739c6dgz7q.png' style='position: absolute; top:0; left:0;z-index:-1'>
     <div class="container">
@@ -198,5 +201,16 @@
         }
         }
     </script>
+
+<script>
+    const buttonMenu = document.querySelector('.buttonMenu')
+    const boxThree = document.querySelector('.box3')
+    buttonMenu.addEventListener('click', ()=> {
+     console.log('yes, hamburger clicked!')
+    buttonMenu.classList.toggle("mobileMenu")
+     boxThree.classList.toggle("mobileMenu")
+    })
+    </script>
+
 </body>
 </html>
