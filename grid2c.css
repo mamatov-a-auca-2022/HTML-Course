@@ -28,6 +28,18 @@ body {
 .box1 {
     grid-area: one;
 }
+.buttonMenu {
+    display: none;
+   } 
+   
+   @media (max-width: 500px) {
+    .buttonMenu {
+    display: block;
+    position: fixed; /* "fixed" elements will always stay in same place even when user scrolls */
+    top: 10px; /* fix the element 0px from top of browser window */
+    right: 0; /* fix the element 0px from right of browser window */
+    }
+   }
 
 .navbar ul {
     list-style-type: none;
@@ -129,6 +141,19 @@ li > img {
     flex-wrap: wrap;
     line-height: 41px;
 }
+
+@media (max-width: 500px) {
+    .box3 {
+    display: none;
+    }
+    .box3.mobileMenu {
+    display: block;
+    position: fixed; /* "fixed" elements will always stay in same place even when user scrolls */
+    top: 50px; /* fix the element 0px from top of browser window */
+    right: 0; /* fix the element 0px from right of browser window */
+    }
+   }
+   
 
 .box4 {
     position: relative;
